@@ -1,4 +1,14 @@
-# React + Vite
+# React + Vite Bank Landing Page
+
+## Links
+- Live site:[Live site Link](https://digitalbanklanding.netlify.app/)
+
+## ScreenShots
+![](./shots/1.png)
+
+![](./shots/2.png)
+
+![](./shots/3.png)
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 

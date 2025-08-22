@@ -1,6 +1,6 @@
 import darkLight from './images/logo-dark.svg'
 import './Header.css'
-import {useState } from 'react'
+import {useState} from 'react'
 import clsx from 'clsx'
 export function Header(props){
      //state
@@ -21,6 +21,12 @@ export function Header(props){
         nav&&'showNav',
         !nav&&'hidden'
     )
+
+    const overlay = clsx('overlay',
+        nav?"shown":null
+    )
+
+    console.log(overlay)
     return(
         <article>
             <header>
@@ -60,6 +66,7 @@ export function Header(props){
                 <button onClick={()=>props.requstRef.current?.scrollIntoView({behavior: "smooth"})}>Request Invite</button>
                 
             </header>
+            {nav?<div className={overlay}></div>:null}
         </article>       
     )
 }

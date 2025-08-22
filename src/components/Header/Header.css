@@ -106,3 +106,16 @@ header button{
 .nav li:hover::before{
     width: 100%;
 }
+
+.overlay {
+    position: fixed;
+    inset: 0; /* fills entire screen */
+    background-color: hsla(0, 0%, 0%, 0.586); 
+    z-index: 5; 
+    opacity: 0;
+    transition: opacity .5s  ease-in-out;
+}
+
+.overlay.shown{
+    opacity: 1;
+}

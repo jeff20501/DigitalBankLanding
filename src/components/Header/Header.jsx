@@ -34,27 +34,27 @@ export function Header(props){
                 <ul className={ClassNav}>
                     <li onClick={()=>{
                             props.homeRef.current?.scrollIntoView({behavior: "smooth"})
-                            toggleNav()
+                            nav&&toggleNav()
                        } } >Home</li>
                             
                     <li onClick={()=>{
                             props.aboutRef.current?.scrollIntoView({behavior: "smooth"})
-                            toggleNav()
+                            nav&&toggleNav()
                        } }>About</li>
                             
                     <li onClick={()=>{
                             props.contactRef.current?.scrollIntoView({behavior: "smooth"})
-                            toggleNav()
+                            nav&&toggleNav()
                         }}>Contact</li>
                             
                     <li onClick={()=>{
                             props.blogRef.current?.scrollIntoView({behavior: "smooth"})
-                            toggleNav()
+                            nav&&toggleNav()
                       }  }>Blog</li>
                             
                     <li onClick={()=>{
                             props.careersRef.current?.scrollIntoView({behavior: "smooth"})
-                            toggleNav()
+                            nav&&toggleNav()
                         }}>Careers</li>
                             
                 </ul>
@@ -63,8 +63,7 @@ export function Header(props){
                     <div className='bar'></div>
                     <div className='bar'></div>
                 </div>
-                <button onClick={()=>props.requstRef.current?.scrollIntoView({behavior: "smooth"})}>Request Invite</button>
-                
+                <button onClick={()=>props.requstRef.current?.scrollIntoView({behavior: "smooth"})}>Request Invite</button>                
             </header>
             {nav?<div className={overlay}></div>:null}
         </article>       

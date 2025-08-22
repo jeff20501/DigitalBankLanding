@@ -3,6 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    overflow-x: hidden;
     @media(width<850px){
         flex-wrap:wrap-reverse;
         justify-content: center;
@@ -17,7 +18,7 @@
 }
 
 .intro .desktop{
-    transform: translate(20%, -10%);
+    transform: translate(25%, -10%);
     z-index: 1;
     position: relative;
 }
@@ -35,8 +36,9 @@
 .intro .mock{
     position: absolute;
     z-index: 2;
-    transform: translate(50%, -90%);
-    block-size: 100%;
+    transform: translate(40%, -125%);
+    block-size: 90%;
+    max-inline-size: 800px;
     @media(width<850px){
         transform: translate(5%, -110%);
         block-size: 40%;

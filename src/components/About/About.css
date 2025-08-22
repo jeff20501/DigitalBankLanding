@@ -1,7 +1,12 @@
 .about{
     padding-left: 15%;
+    padding-right: 7%;
     background: var(--aboutBg);
     padding-bottom: 30px;
+    @media(width<850px){
+        padding-left: 6%;
+        padding-right: 2%;
+    }
 }
 
 .about img{

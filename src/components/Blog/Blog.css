@@ -1,10 +1,12 @@
 .articles{
     padding-left: 15%;
+    padding-right: 7%;
     margin-block: 90px;
     border-radius: 20px;
     background: var(--footerColor);
     @media(width<850px){
         padding-left: 6%;
+        padding-right: 2%;
     }
 }
 
@@ -13,10 +15,15 @@
     overflow: hidden;
     transition: .3s ease-in-out;
     border-radius: 20px;
+    box-shadow: 1px 1px 5px var(--headColor);
+}
+
+.articles .grids  p{
+    padding: 15px;
 }
 
 .articles .grids div img{
-    max-inline-size: 100%;
+    inline-size: 100%;
     transition: .5s ease-in-out;
     overflow-clip-margin: content-box;
     overflow: clip;

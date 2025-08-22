@@ -1,0 +1,25 @@
+.about{
+    padding-left: 15%;
+    background: var(--aboutBg);
+    padding-bottom: 30px;
+}
+
+.about img{
+    margin: 0 auto;
+}
+
+.about .head{
+    margin-top: 100px;
+    font-size: 2rem;
+}
+
+.about p{
+    margin-bottom: 40px;
+}
+
+.minHead{
+    color:var(--headColor);
+    margin-block: 30px;
+    font-size: 1.4rem;
+}
+
